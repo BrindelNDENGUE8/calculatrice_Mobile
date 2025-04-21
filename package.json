@@ -1,0 +1,29 @@
+{
+  "name": "calculatrice-electron",
+  "version": "1.0.0",
+  "description": "Une calculatrice créée avec Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "author": "NDENGUE FONZE BRINDEL RONEL",
+  "license": "MIT",
+  "build": {
+    "appId": "com.tonnom.calculatrice",
+    "productName": "Calculatrice Electron",
+    "win": {
+      "target": "nsis",
+      "icon": "image_pFd_icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}
